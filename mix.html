@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixHost</title>
+    <link rel="stylesheet" href="mix.css">
+    <link rel="shortcut icon" href="foto/mixhost logo.png" type="image/x-icon">
+</head>
+<header class="title_project">
+  <h1 style="position: absolute; top: 2%; left: 40%; color:rgb(158, 215, 243); font-family: sans-serif;">Welcome to <br> MixHost</h1>
+</header>
+<header class="burger_header">
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Главная</a></li>
+          <li><a class="menu__item" href="#label">Проекты</a></li>
+          <li><a class="menu__item" href="#comand">Команда</a></li>
+          <li><a class="menu__item" href="#map">Карта</a></li>
+          <li><a class="menu__item" href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <style>
+        /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0800;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 150px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #daaacd;
+  box-shadow: 1px 0px 6px rgba(241, 184, 184, 0.2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+@media (max-width: 390px) {
+  .menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 230px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #daaacd;
+  box-shadow: 1px 0px 6px rgba(241, 184, 184, 0.2);
+  transform: scale(0672.64px);
+}
+}
+      </style>
+</header>
+    <div class="diagram-foto-navruz-bolajon">
+    </div>
+    <div class="tabs_element_for_mix">
+        <div class="content">
+        <div class="tabs_body">
+            <div id="tab_01" class="tab_block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+            </div>
+            <div id="tab_02" class="tab_block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+            </div>
+            <div id="tab_03" class="tab_block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ut saepe nam error facilis accusamus fugit itaque perferendis sequi neque sunt asperiores assumenda corrupti iure at vitae, iste rem.
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="name" style="margin-right: 60px;" id="comand">
+        <div class="foto-jamoliddin">
+<img src="navruz/jamoliddin.jpg" alt="" width="400px">
+        </div>
+        <div class="foto-imronbek">
+            <img src="navruz/imronbek.jpg" alt="" width="500px">
+        </div><br><br><br><br><br><br><br>
+        <div class="foto-sadiya">
+            <img src="navruz/sadiya.jpg" alt="" width="500px">
+        </div>
+        <div class="foto-rizo">
+            <img src="navruz/rizo.jpg" alt="" width="500px">
+        </div>
+        <div class="foto-nosirjonow">
+            <img src="navruz/nosirjonow.jpg" alt="" width="500px">
+        </div>
+        <div class="komanda-navruz-bolajon-foto">
+        <img src="navruz/our comand.jpg" alt=""width="500px">
+        </div>
+        <style>
+          .foto-jamoliddin {
+            position: absolute;
+            left: 40%;
+          }
+          .foto-rizo {
+            position: absolute;
+            left: 40%;
+            margin-top: -400px;
+          }
+          .komanda-navruz-bolajon-foto {
+            position: absolute;
+            left: 40%;
+            margin-top: -400px;
+          }
+          .name {
+            margin-right: 100px;
+          }
+
+          @media (max-width: 600px) {
+            .foto-jamoliddin {
+            position: absolute;
+            left: 40%;
+            margin-left: 500px;
+          }
+          .foto-rizo {
+            position: absolute;
+            left: 40%;
+            margin-top: -400px;
+            margin-left: 500px;
+          }
+          .komanda-navruz-bolajon-foto {
+            position: absolute;
+            left: 40%;
+            margin-top: -400px;
+            margin-left: 500px;
+          }
+          }
+        </style>
+        </div>
+        <div class="video_navruz_bolajon">
+            <video controls src="navruz/video_2022-11-19_15-18-20.mp4" width="500px"></video>
+          </div>
+        <br>
+    </br>
+      <div class="map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6224079.039058396!2d63.0354960125!3d40.38445200584062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1668872388389!5m2!1sru!2s" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!--form-->
+    </form>
+    <details id="change_data">
+      <summary style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Каким браузером вы пользуетесь</summary>
+
+      <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Your favorite a brauser</h5>
+      <select name="brauser" id="brauser">
+        <option value="google">Google</option>
+        <option value="Edge">Microsoft Edge</option>
+        <option value="Yandex">Yandex</option>
+        <option value="Yahoo">Yahoo</option>
+      </select><br><br>
+      <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Your favorite programing language</h5>
+      <select name="language" id="language">
+        <option value="JS">JS</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="PHP">PHP</option>
+        <option value="YAML">YAML</option>
+        <option value="JSON">JSON</option>
+        <option value="Python">Python</option>
+        <option value="HML">HML</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="C#">C#</option>
+      </select><br><br>
+      <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Your favorite company</h5>
+      <select name="company" id="company">
+        <option value="Google">Google</option>
+        <option value="GitHab">GitHab</option>
+        <option value="Edge">Microsoft</option>
+        <option value="Yandex">Yandex</option>
+        <option value="Yahoo">Yahoo</option>
+      </select>
+      <style>
+        #brauser,
+        #language,
+        #company {
+          width: 400px;
+          height: 40px;
+          background: cadetblue;
+        }
+      </style>
+      </details>
+   <form action="" class="form">
+        <input type="text" name="name" id="name" placeholder="Name" required><br>
+        <input type="email" name="email" id="email" placeholder="email" required><br>
+        <input type="submit" value="subscribe" style="
+        width: 600px; height: 50px; background: green; font-family: sans-serif; font-weight: 100;" id="submit">
+        <style>
+            body {
+              background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 88%, rgba(252,70,107,1) 94%);
+            }
+    .menu_element-html {
+    width: 100%;
+    height: 100px;
+    background: aqua;
+}
+.tabs_element_for_mix {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+#tab_01 {
+    width: 672.64px;
+    height: 147px;
+    background: orange;
+    margin-top: 20px;
+    z-index: 2;
+}
+#tab_02 {
+    width: 672.64px;
+    height: 147px;
+    background: rgb(229, 255, 156);
+    margin-top: 20px;
+    z-index: 2;
+}
+
+#tab_03 {
+    width: 672.64px;
+    height: 147px;
+    background: rgb(158, 215, 243);
+    margin-top: 20px;
+    z-index: 2;
+}
+.item {
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+.tabs_body {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+
+#submit:active {
+    background: url('../Mixhost/foto/ZKZx.gif');
+}
+input {
+font-variant: normal;
+margin-top: 20px; 
+width: 500px;
+height: 20px;
+position: initial;
+padding-top: 20px;
+font-family: sans-serif;
+opacity: 80%;
+border-radius: 10px;
+}
+input:focus {
+box-shadow: 0 0 15px green;
+opacity: 80%;
+}
+input:required {
+  box-shadow: 0 0 15px yellow;
+}
+input::placeholder {
+position: absolute;
+top: 10px;
+left: 10px;
+color: blueviolet;
+}
+
+
+.href {
+margin-top: 20px;
+width: 500px;
+height: 30px;
+border: 2px solid rgb(210, 0, 210);
+background-color: rgb(220, 124, 220);
+border-radius: 10px;
+text-align: center;
+letter-spacing: 10px;
+box-shadow: 0 0 5px black;
+font-family: sans-serif;
+cursor: pointer;
+}
+.href:hover {
+opacity: 90%;
+cursor: pointer;
+}
+
+.enter {
+letter-spacing: 20px;
+font-family: sans-serif;
+cursor: pointer;
+color: aqua;
+font-weight: 100;
+font-size: 50px;
+}
+
+@media (max-width: 390px) {
+body{
+position: absolute;
+top: 50%;
+left: 40%;
+}
+}
+
+@media (max-width: 600px) {
+body{
+top: 50%;
+left: 40%;
+}
+}
+
+        </style>
+      </form><br>
+      <div class="coment">
+        <div class="coment_body">
+          <div class="coment_input">
+            <div class="result">
+              <style>
+                .result {
+                  width: 800px;
+                  height: 90px;
+                  background: #daaacd;
+                  display: none;
+                  border-radius: 20px;
+                  margin-left: 20px;
+                }
+              </style>
+            </div><br>
+            <textarea name="coment" id="coment" cols="30" rows="10" style="
+            width: 400px;
+            height: 90px;
+            " placeholder="Your coment..."></textarea><br>
+            <input type="button" value="AddComent" id="ButtonComent" style="
+            width: 400px;
+            height: 90px;
+            background: #daaacd;
+            resize: none;
+            ">
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+            <div class="bg-color-sky-light" style="margin-left: -16%;">
+            <div class="container content-lg" id="contact">
+                <div class="row" style="margin-left: 100px;">
+                    <div class="col-sm-3 sm-margin-b-30">
+                        <div class="text-right sm-text-left">
+                            <h2 class="margin-b-0">Contacts</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-8_col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3_col-xs-6_md-margin-b-30">
+                                <h5>Location</h5>
+                                <a href="#">Andijan, 6 soglom avlod</a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                <h5>Phone</h5>
+                                <a href="#">+998 91 615 8986</a>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <h5>Email</h5>
+                                <a href="mailto:#">imronbekweb@gmail.com
+                                </a>
+                            </div>
+                            
+                <!--// end row -->
+            </div>
+        </div>
+    </div>
+    <style>
+        .bg-color-sky-light {
+            width: 1600px;
+            height: 300px;
+            background: rgb(111, 225, 225);
+        }
+         .bg-color-sky-light a {
+            font-family: sans-serif;
+         }
+        .bg-color-sky-light h5{
+            font-size: 12px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .margin-b-0 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+        @media (max-width: 600px) {
+          .bg-color-sky-light {
+            position: absolute;
+            left: 0%;
+          }
+        }
+    </style>
+<body bgcolor="white"></body>
+    <script src="mix.js"></script>
+</body>
